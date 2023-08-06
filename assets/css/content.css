@@ -1,0 +1,11 @@
+.content-box {
+    padding: 9vh 5vw;
+    align-items: unset;
+    justify-content: unset;
+    flex: 0.82;
+}
+@media (max-width: 1153px) {
+    .content-box {
+        flex: 0.9;
+    }
+}

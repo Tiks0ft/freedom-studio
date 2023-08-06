@@ -1,0 +1,199 @@
+.order__form {
+    display: flex;
+    gap: 10vw;
+    flex: 0.8;
+}
+
+.order__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.fields, .order__descr {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.field__item {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.field__item label {
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+input, select, textarea, .phone__input {
+    font-size: 19px;
+    border: 1px solid #d5d5d5;
+    border-radius: 5px;
+    min-width: 380px;
+    padding: 12px 5px;
+    resize: none;
+}
+.phone__input select, .phone__input input {
+    border-radius: unset;
+    border: unset;
+    min-width: unset;
+    padding: unset;
+}
+.phone__input {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    padding-left: 5px;
+}
+.countries {
+    position: relative;
+}
+.country:hover {
+    background: #d2d2d2;
+}
+.country {
+    justify-content: center;
+    display: flex;
+    padding: 5px;
+    align-items: center;
+}
+.select__country {
+    position: absolute;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25)
+}
+.hidden {
+    display: none;
+}
+.c_value, .country > img {
+    width: 35px;
+    height: 22px;
+}
+textarea {
+    height: 100px;
+}
+
+.order__descr p {
+    max-width: 400px;
+    color: #777676;
+    font-size: 20px;
+}
+.order__top h1 {
+    text-align: left;
+}
+.order__result h2 {
+    color: #959595;
+    font-weight: 500;
+}
+
+.order__result span {
+    font-weight: 800;
+    color: black;
+}
+
+.order__btn {
+    background: inherit;
+    border: 2px #4200FF solid;
+    width: 80%;
+    color: #4200FF;
+    font-size: 17px;
+    cursor: pointer;
+    font-weight: 500;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    transition: 0.5s ease all;
+    padding: 12px 0;
+    min-width: 200px;
+}
+.order__btn:hover {
+    background: #4200FF;
+    color: white;
+}
+.order__result, .order__top {
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+}
+@media (max-width: 1273px) {
+    input, select, textarea{
+        min-width: 280px;
+    }
+    .order__top h1 {
+        font-size: 20px;
+    }
+    .order__top p{
+        font-size: 16px;
+    }
+    .order__descr {
+        max-width: 350px;
+    }
+
+}
+@media (max-width: 936px) {
+    .order__content {
+        flex: 1;
+        justify-content: flex-start;
+        gap: 8vh;
+    }
+}
+@media (max-width: 701px) {
+    input, select, textarea, .phone__input{
+        min-width: 170px;
+        padding: 6px 5px;
+        font-size: 16px;
+    }
+    .order__top h1 {
+        font-size: 18px;
+    }
+    .order__top p{
+        font-size: 14px;
+    }
+    .order__result h2 {
+        font-size: 19px;
+    }
+    .order__btn {
+        width: 60px;
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 553px) {
+    .content-box h1 {
+        font-size: 19px;
+    }
+    .order__form {
+        flex-direction: column;
+        gap: 4vh;
+    }
+    .fields {
+        gap: 3vh;
+        width: 95%;
+        margin: auto;
+    }
+    .field__item label {
+        font-size: 10px;
+    }
+    input, select, textarea{
+       font-size: 14px;
+    }
+    .order__descr {
+        gap: 4vh;
+        max-width: unset;
+    }
+    .order__result, .order__top {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 8px;
+    }
+    textarea {
+        height: 60px;
+    }
+}

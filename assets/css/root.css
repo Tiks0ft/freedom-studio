@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    left: 0;
+    top: 0;
+    max-height: 100vh;
+    overflow-y: hidden;
+}
+ul {
+    padding: unset;
+}
+li {
+    list-style: unset;
+}
+a {
+    color: unset;
+    text-decoration: unset;
+}
+input, select, textarea {
+    outline: none;
+}
+.wrapper {
+    padding: 0 50px;
+    display: flex;
+    justify-content: space-between;
+}
+@media (max-width: 1050px) {
+    .wrapper {
+        padding: 0 30px;
+    }
+}
+@media (max-width: 936px) {
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100vh;
+        gap: 10px;
+        padding-top: 3vh;
+    }
+    .sidebar {
+        flex-direction: row !important;
+        justify-content: space-between !important;
+        height: unset !important;
+        max-width: 100% !important;
+    }
+    .sidebar #email {
+        writing-mode: unset !important;
+        transform: unset !important;
+        font-size: 20px;
+        font-weight: 600;
+    }
+    .content {
+        flex: 0.8 !important;
+        justify-content: unset !important;
+    }
+    .projects {
+        justify-content: center;
+        max-height: 80vh;
+
+    }
+    .project img {
+        width: 100% !important;
+        max-width: unset !important;
+    }
+    .project {
+        margin-bottom: 50px;
+        width: 575px !important;
+    }
+    .project:last-child {
+        margin-bottom: 15vh;
+    }
+    .content-box {
+        padding-bottom: 0 !important;
+        padding-top: 10px !important;
+    }
+    .content-box h1 {
+        font-size: 25px;
+        text-align: center;
+    }
+    #email {
+        display: none;
+    }
+
+}
+@media (max-width: 534px) {
+    .menu__links {
+        flex-direction: column;
+        align-items: unset !important;
+        gap: 20px;
+    }
+    .menu__nav a {
+        font-size: 22px !important;
+    }
+    .menu__nav img {
+        height: 55px;
+    }
+    .content-box {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+    .order__top h1 {
+        font-size: 15px !important;
+    }
+    .order__top p {
+        font-size: 13px !important;
+    }
+
+}

@@ -1,0 +1,41 @@
+.preloader {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    width: 100vw;
+    z-index: 10;
+    background: black;
+    justify-content: center;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+.preloader__block {
+    max-width: 355px;
+}
+.preloader__block h1 {
+    font-size: 50pt;
+}
+.preloader__block h2 {
+    font-size: 28pt;
+    font-weight: 300;
+    letter-spacing: 42px;
+}
+.loaded_hiding .preloader {
+    transition: 0.5s opacity;
+    opacity: 0;
+}
+
+.loaded .preloader {
+    display: none;
+}
+@media (max-width: 380px) {
+    .preloader__block h1 {
+        font-size: 35pt;
+    }
+    .preloader__block h2 {
+        font-size: 20pt;
+        letter-spacing: 29px;
+    }
+}

@@ -1,0 +1,26 @@
+.sidebar {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 70px;
+}
+.sidebar img {
+    width: 33px;
+    cursor: pointer;
+}
+.sidebar #email {
+    writing-mode: tb-rl;
+    transform:rotate(180deg);
+    font-size: 15px;
+    font-weight: 600;
+}
+@media (max-width: 500px) {
+    .sidebar img {
+        width: 25px !important;
+    }
+    .menu__social {
+        gap: 20px ;
+    }
+}
